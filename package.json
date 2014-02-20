@@ -1,0 +1,26 @@
+{
+  "name": "temper1-server",
+  "title": "Temper1 server",
+  "description": "Create a REST api to get the temperature of the temper1-connector.",
+  "url": "http://github.com/synoa/temper1-server",
+  "author": "Tim Pietrusky",
+  "copyright": "2014",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/synoa/temper1-server.git"
+  },
+  "main": "./index.js",
+  "dependencies": {
+    "temper1-connector": "~0.0.6",
+    "restify": "~2.6.1"
+  },
+  "engines": {
+    "node": ">=0.10"
+  },
+  "devDependencies": {
+    "temper1-connector": "~0.0.6",
+    "restify": "~2.6.1"
+  }
+}
