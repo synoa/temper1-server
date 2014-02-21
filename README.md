@@ -1,13 +1,15 @@
 # Temper1 Server
 
-A node module to control the [temper1-connector](http://github.com/TimPietrusky/temper1-connector) trough a REST API. 
+A node module to control the [temper1-connector](http://github.com/TimPietrusky/temper1-connector) with a REST API. 
 
 
 ## Dependencies
 
-### libusb
+### Linux
 
-At first you have to install [libusb](http://www.libusb.org/) in order to use this module. 
+#### libusb
+
+You have to install [libusb](http://www.libusb.org/) first in order to use this module. 
 
 
 ## Author

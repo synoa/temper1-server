@@ -1,7 +1,7 @@
 {
   "name": "temper1-server",
   "title": "Temper1 server",
-  "description": "Create a REST api to get the temperature of the temper1-connector.",
+  "description": "Create a REST API to get the temperature of the temper1-connector.",
   "url": "http://github.com/synoa/temper1-server",
   "author": "Tim Pietrusky",
   "copyright": "2014",
@@ -14,7 +14,8 @@
   "main": "./index.js",
   "dependencies": {
     "temper1-connector": "~0.0.6",
-    "restify": "~2.6.1"
+    "restify": "~2.6.1",
+    "ip": "~0.3.0"
   },
   "engines": {
     "node": ">=0.10"
