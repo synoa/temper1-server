@@ -7,8 +7,11 @@
  * 
  */
 var temperServer = require('./server.js'),
-    restify = require('restify')
+    restify = require('restify'),
+    ip = require('ip')
 ;
+
+
 
 
 
@@ -43,12 +46,27 @@ function respond(req, res, next) {
 
 // Create the server
 var server = restify.createServer();
-server.get('/hello/:name', respond);
-server.head('/hello/:name', respond);
+
+// Activate Cross-Origin Resource Sharing
+server.use(restify.CORS());
+server.use(restify.fullResponse());
 
 
-var port = 1338;
 
-server.listen(port, function() {
+
+
+// REST: Returns the temperature as JSON
+server.get('/temperature', respond);
+
+
+
+
+
+
+var port = 1338,
+    serverIP = ip.address()
+;
+
+server.listen(port, serverIP, function() {
   console.log('%s listening at %s', server.name, server.url);
 });

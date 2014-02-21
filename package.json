@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "temper1-connector": "~0.0.6",
-    "restify": "~2.6.1"
+    "restify": "~2.6.1",
+    "ip": "~0.3.0"
   }
 }
